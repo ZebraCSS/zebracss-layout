@@ -1,0 +1,21 @@
+@layout-width-fluid: 100%;
+@layout-width-fluidItem: auto;
+@layout-verticalAlign-fluidItem: middle;
+
+/**
+ * Light grid with fluid items
+ */
+.mixin-layout-fluid (@width: @layout-width-fluid) {
+	display: block;
+	width: @width;
+	list-style: none;
+}
+
+.mixin-layout-fluidItem (
+	@width: @layout-width-fluidItem,
+	@verticalAlign: @layout-verticalAlign-fluidItem) {
+
+	width: @width;
+	display: inline-block;
+	vertical-align: @verticalAlign;
+}

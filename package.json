@@ -29,5 +29,8 @@
     "bugs": {
         "url": "https://github.com/ZebraCSS/zebracss-layout/issues"
     },
-    "homepage": "https://github.com/ZebraCSS/zebracss-layout"
+    "homepage": "https://github.com/ZebraCSS/zebracss-layout",
+	"dependencies": {
+		"zebracss-base": "git://github.com/ZebraCSS/zebracss-base.git#master"
+	}
 }

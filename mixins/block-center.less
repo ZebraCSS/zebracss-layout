@@ -1,3 +1,5 @@
+@layout-width-blockCenter: 80%;
+
 /**
  * Align block in center of his parent
  */
@@ -11,7 +13,7 @@
  * Align block in center of his parent
  * and set width
  */
-.mixin-layout-blockCenter (@width: 80%) {
+.mixin-layout-blockCenter (@width: @layout-width-blockCenter) {
 	width: @width;
 	.mixin-layout-blockCenter();
 }
