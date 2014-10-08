@@ -11,25 +11,14 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+.mixin-layout-containFloats () {
+	&:before,
+	&:after {
+		content: ' '; /* 1 */
+		display: table; /* 2 */
+	}
 
-.u-cf:before,
-.u-cf:after {
-	content: ' '; /* 1 */
-	display: table; /* 2 */
-}
-
-.u-cf:after {
-	clear: both;
-}
-
-/**
- * Floats
- */
-
-.u-floatLeft {
-	float: left;
-}
-
-.u-floatRight {
-	float: right;
+	&:after {
+		clear: both;
+	}
 }

@@ -1,0 +1,17 @@
+/**
+ * Align block in center of his parent
+ */
+.mixin-layout-blockCenter () {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/**
+ * Align block in center of his parent
+ * and set width
+ */
+.mixin-layout-blockCenter (@width: 80%) {
+	width: @width;
+	.mixin-layout-blockCenter();
+}
