@@ -5,8 +5,9 @@
  */
 .mixin-layout-blockCenter () {
 	display: block;
-	margin-left: auto;
+
 	margin-right: auto;
+	margin-left: auto;
 }
 
 /**
@@ -15,5 +16,6 @@
  */
 .mixin-layout-blockCenter (@width: @layout-width-blockCenter) {
 	width: @width;
+
 	.mixin-layout-blockCenter();
 }

@@ -7,6 +7,10 @@
         "type": "git",
         "url": "https://github.com/ZebraCSS/zebracss-layout.git"
     },
+	"scripts": {
+		"build": "gulp build",
+		"csscomb": "gulp csscomb"
+	},
     "keywords": [
         "css",
         "less",
@@ -26,5 +30,11 @@
     "bugs": {
         "url": "https://github.com/ZebraCSS/zebracss-layout/issues"
     },
-    "homepage": "https://github.com/ZebraCSS/zebracss-layout"
+    "homepage": "https://github.com/ZebraCSS/zebracss-layout",
+	"devDependencies": {
+		"gulp": "^3.8.8",
+		"gulp-csscomb": "^3.0.3",
+		"gulp-less": "^1.3.6",
+		"gulp-rename": "^1.2.0"
+	}
 }
