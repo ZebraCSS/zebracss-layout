@@ -2,7 +2,9 @@
 @layout-width-fluidItem: auto;
 @layout-gutter-fluidItem: 20px;
 @layout-horizontalAlign-fluidItem: left;
-@layout-verticalAlign-fluidItem: middle;
+@layout-verticalAlign-fluidItem: top;
+@layout-amount-fluidColumnSpan: 1;
+@layout-amount-fluidTotalColumns: 12;
 
 /**
  * Light grid with fluid items
@@ -26,6 +28,17 @@
 	width: @width;
 	display: inline-block;
 	vertical-align: @verticalAlign;
+}
+
+.mixin-layout-fluidColumn (
+	@columnSpan: @layout-amount-fluidColumnSpan,
+	@totalColumns: @layout-amount-fluidTotalColumns,
+	@verticalAlign: @layout-verticalAlign-fluidItem) {
+
+	.mixin-layout-fluidItem(
+		(@columnSpan * (100 / @totalColumns)) + 0%,
+		@verticalAlign
+	);
 }
 
 .mixin-layout-fluidItem-gutterHorizontal (
