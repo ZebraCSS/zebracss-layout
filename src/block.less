@@ -1,5 +1,16 @@
 @import '../lib/block-center';
 
-.l-blockCenter {
-	.mixin-layout-blockCenter();
+.l-block {
+	display: block;
+
+	&--center {
+		.mixin-layout-blockCenter();
+	}
+	&--inline {
+		display: inline-block;
+	}
+	&--hidden,
+	&.is-hidden {
+		display: none;
+	}
 }
